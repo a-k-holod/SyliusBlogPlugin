@@ -15,7 +15,7 @@
         "symfony/webpack-encore-bundle": "^2.3",
         "odiseoteam/blog-bundle": "^1.2 || ^2.0",
         "friendsofsymfony/ckeditor-bundle": "^2.0",
-        "ewz/recaptcha-bundle": "^5.0"
+        "ewz/recaptcha-bundle": "^4.0"
     },
     "require-dev": {
         "behat/behat": "^3.6.1",
