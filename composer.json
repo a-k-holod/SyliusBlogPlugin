@@ -13,7 +13,8 @@
         "sylius/sylius": "^2.0",
         "symfony/framework-bundle": "^7.2",
         "symfony/webpack-encore-bundle": "^2.3",
-        "friendsofsymfony/ckeditor-bundle": "^2.0"
+        "friendsofsymfony/ckeditor-bundle": "^2.0",
+        "a-k-holod/odiseoteam-blog-bundle": "dev-master"
     },
     "require-dev": {
         "behat/behat": "^3.6.1",
