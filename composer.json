@@ -12,8 +12,8 @@
         "php": "^8.1",
         "sylius/sylius": "^2.0",
         "symfony/framework-bundle": "^7.2",
-        "symfony/webpack-encore-bundle": "^2.0",
-        "odiseoteam/blog-bundle": "^1.2",
+        "symfony/webpack-encore-bundle": "^2.3",
+        "odiseoteam/blog-bundle": "^1.2 || ^2.0",
         "friendsofsymfony/ckeditor-bundle": "^2.0",
         "ewz/recaptcha-bundle": "^5.0"
     },
