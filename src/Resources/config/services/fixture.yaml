@@ -1,11 +1,5 @@
 services:
-//    odiseo_sylius_blog_plugin.fixture.blog_article:
-//        class: Odiseo\SyliusBlogPlugin\Fixture\BlogArticleFixture
-//        arguments:
-//            - '@odiseo_blog.manager.article'
-//            - '@odiseo_sylius_blog_plugin.fixture.example_factory.blog_article'
-//        tags:
-//            - { name: sylius_fixtures.fixture }
+
 
     odiseo_sylius_blog_plugin.fixture.blog_article_category:
         class: Odiseo\SyliusBlogPlugin\Fixture\BlogArticleCategoryFixture
