@@ -1,15 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
-                                      http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+                                      https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
 
     <entity name="Odiseo\SyliusBlogPlugin\Entity\ArticleComment" table="odiseo_blog_article_comment">
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/>
         </id>
 
-        <many-to-one field="author" target-entity="Sylius\Component\Core\Model\ShopUserInterface">
-            <join-column name="author_id" referenced-column-name="id"/>
+        <field name="author" type="string" length="255"/>
+        <field name="content" type="text"/>
+        <field name="createdAt" type="datetime"/>
+        <field name="updatedAt" type="datetime" nullable="true"/>
+
+        <!-- relation to Article -->
+        <many-to-one field="article" target-entity="Odiseo\SyliusBlogPlugin\Entity\Article">
+            <join-column name="article_id" referenced-column-name="id" nullable="false"/>
         </many-to-one>
     </entity>
 </doctrine-mapping>
